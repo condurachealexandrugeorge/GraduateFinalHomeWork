@@ -1,0 +1,971 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 304507900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "I make a call to create OWNER_ADMIN",
+        "description": "",
+        "id": ";i-make-a-call-to-create-owner-admin;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 201874900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have access to the petclinicSecured as an admin with credentials \"admin\",\"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 68
+                },
+                {
+                  "val": "admin",
+                  "offset": 76
+                }
+              ],
+              "location": "CreateAdminSteps.iHaveAccessToThePetclinicSecuredAsAnAdminWithCredentials(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1435849100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I make a call to \"/api/users\" for create OWNER_ADMIN, VET_ADMIN with:  \"OWNER_ADMIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/users",
+                  "offset": 18
+                },
+                {
+                  "val": "OWNER_ADMIN",
+                  "offset": 72
+                }
+              ],
+              "location": "CreateAdminSteps.iMakeACallToForCreateOWNER_ADMINVET_ADMINWith(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e doesn\u0027t match actual status code \u003c400\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:470)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:632)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:121)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:129)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat stepsDef.CreateAdminSteps.iGetStatusCode(CreateAdminSteps.java:73)\r\n\tat ✽.I get status code 201(src/test/java/allScenario/adminSteps.feature:8)\r\n",
+              "duration": 37636000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I get status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 412600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "I make a call to create OWNER_ADMIN",
+        "description": "",
+        "id": ";i-make-a-call-to-create-owner-admin;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7100600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I have access to the petclinicSecured as an admin with credentials \"admin\",\"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 68
+                },
+                {
+                  "val": "admin",
+                  "offset": 76
+                }
+              ],
+              "location": "CreateAdminSteps.iHaveAccessToThePetclinicSecuredAsAnAdminWithCredentials(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 220739400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I make a call to \"/api/users\" for create OWNER_ADMIN, VET_ADMIN with:  \"VET_ADMIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/users",
+                  "offset": 18
+                },
+                {
+                  "val": "VET_ADMIN",
+                  "offset": 72
+                }
+              ],
+              "location": "CreateAdminSteps.iMakeACallToForCreateOWNER_ADMINVET_ADMINWith(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e doesn\u0027t match actual status code \u003c400\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:470)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:632)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:121)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:129)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat stepsDef.CreateAdminSteps.iGetStatusCode(CreateAdminSteps.java:73)\r\n\tat ✽.I get status code 201(src/test/java/allScenario/adminSteps.feature:8)\r\n",
+              "duration": 5020500,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I get status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 520300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "I make a call to verify authentication as an admin",
+        "description": "",
+        "id": ";i-make-a-call-to-verify-authentication-as-an-admin",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3988000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I try to access petclinicSecured",
+            "match": {
+              "location": "CreateAdminSteps.iTryToAccessPetclinicSecured()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156881300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I enter the credentials \"admin\",\"admin\" for authentication",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 25
+                },
+                {
+                  "val": "admin",
+                  "offset": 33
+                }
+              ],
+              "location": "CreateAdminSteps.iEnterTheCredentialsForAuthentication(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4008900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I get status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 527100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "I make a call to verify authentication as an owner_admin",
+        "description": "",
+        "id": ";i-make-a-call-to-verify-authentication-as-an-owner-admin;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 169912100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I try to access petclinicSecured as \"OWNER_ADMIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OWNER_ADMIN",
+                  "offset": 37
+                }
+              ],
+              "location": "CreateAdminSteps.iTryToAccessPetclinicSecuredAs(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)\r\n\tat ✽.I access the pages: \"/api/owners\"(src/test/java/allScenario/adminSteps.feature:23)\r\n",
+              "duration": 298877100,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "I access the pages: \"/api/owners\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/owners",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAdminSteps.iAccessThePages(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I get status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 353900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "I make a call to verify authentication as an owner_admin",
+        "description": "",
+        "id": ";i-make-a-call-to-verify-authentication-as-an-owner-admin;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 174519700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I try to access petclinicSecured as \"OWNER_ADMIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OWNER_ADMIN",
+                  "offset": 37
+                }
+              ],
+              "location": "CreateAdminSteps.iTryToAccessPetclinicSecuredAs(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)\r\n\tat ✽.I access the pages: \"/api/pets\"(src/test/java/allScenario/adminSteps.feature:23)\r\n",
+              "duration": 11223700,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "I access the pages: \"/api/pets\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/pets",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAdminSteps.iAccessThePages(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I get status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 361800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "I make a call to verify authentication as an owner_admin",
+        "description": "",
+        "id": ";i-make-a-call-to-verify-authentication-as-an-owner-admin;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 181687500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I try to access petclinicSecured as \"OWNER_ADMIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OWNER_ADMIN",
+                  "offset": 37
+                }
+              ],
+              "location": "CreateAdminSteps.iTryToAccessPetclinicSecuredAs(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)\r\n\tat ✽.I access the pages: \"/api/pettypes\"(src/test/java/allScenario/adminSteps.feature:23)\r\n",
+              "duration": 9328600,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "I access the pages: \"/api/pettypes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/pettypes",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAdminSteps.iAccessThePages(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I get status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 432700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "I make a call to verify authentication as an owner_admin",
+        "description": "",
+        "id": ";i-make-a-call-to-verify-authentication-as-an-owner-admin;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 190642700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I try to access petclinicSecured as \"OWNER_ADMIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "OWNER_ADMIN",
+                  "offset": 37
+                }
+              ],
+              "location": "CreateAdminSteps.iTryToAccessPetclinicSecuredAs(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)\r\n\tat ✽.I access the pages: \"/api/visits\"(src/test/java/allScenario/adminSteps.feature:23)\r\n",
+              "duration": 36941000,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "I access the pages: \"/api/visits\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/visits",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAdminSteps.iAccessThePages(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "I get status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1177300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "I make a call to verify authentication as an vet_admin",
+        "description": "",
+        "id": ";i-make-a-call-to-verify-authentication-as-an-vet-admin;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 157224300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I try to access petclinicSecured as \"VET_ADMIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "VET_ADMIN",
+                  "offset": 37
+                }
+              ],
+              "location": "CreateAdminSteps.iTryToAccessPetclinicSecuredAs(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)\r\n\tat ✽.I access the pages: \"/api/specialties\"(src/test/java/allScenario/adminSteps.feature:36)\r\n",
+              "duration": 14814400,
+              "status": "failed"
+            },
+            "line": 36,
+            "name": "I access the pages: \"/api/specialties\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/specialties",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAdminSteps.iAccessThePages(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I get status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 553000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 41,
+        "name": "I make a call to verify authentication as an vet_admin",
+        "description": "",
+        "id": ";i-make-a-call-to-verify-authentication-as-an-vet-admin;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 153288400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I try to access petclinicSecured as \"VET_ADMIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "VET_ADMIN",
+                  "offset": 37
+                }
+              ],
+              "location": "CreateAdminSteps.iTryToAccessPetclinicSecuredAs(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)\r\n\tat ✽.I access the pages: \"/api/pets\"(src/test/java/allScenario/adminSteps.feature:36)\r\n",
+              "duration": 22733200,
+              "status": "failed"
+            },
+            "line": 36,
+            "name": "I access the pages: \"/api/pets\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/pets",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAdminSteps.iAccessThePages(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I get status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 669200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "I make a call to verify authentication as an vet_admin",
+        "description": "",
+        "id": ";i-make-a-call-to-verify-authentication-as-an-vet-admin;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 159526800,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I try to access petclinicSecured as \"VET_ADMIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "VET_ADMIN",
+                  "offset": 37
+                }
+              ],
+              "location": "CreateAdminSteps.iTryToAccessPetclinicSecuredAs(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)\r\n\tat ✽.I access the pages: \"/api/pettypes\"(src/test/java/allScenario/adminSteps.feature:36)\r\n",
+              "duration": 25253600,
+              "status": "failed"
+            },
+            "line": 36,
+            "name": "I access the pages: \"/api/pettypes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/pettypes",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAdminSteps.iAccessThePages(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I get status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 510300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "I make a call to verify authentication as an vet_admin",
+        "description": "",
+        "id": ";i-make-a-call-to-verify-authentication-as-an-vet-admin;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 156909900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I try to access petclinicSecured as \"VET_ADMIN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "VET_ADMIN",
+                  "offset": 37
+                }
+              ],
+              "location": "CreateAdminSteps.iTryToAccessPetclinicSecuredAs(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)\r\n\tat ✽.I access the pages: \"/api/vets\"(src/test/java/allScenario/adminSteps.feature:36)\r\n",
+              "duration": 12599600,
+              "status": "failed"
+            },
+            "line": 36,
+            "name": "I access the pages: \"/api/vets\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/api/vets",
+                  "offset": 21
+                }
+              ],
+              "location": "CreateAdminSteps.iAccessThePages(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I get status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 18
+                }
+              ],
+              "location": "CreateAdminSteps.iGetStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 565200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateAdminSteps.before()"
+            }
+          }
+        ],
+        "line": 46,
+        "name": "I make a call to verify post in database",
+        "description": "",
+        "id": ";i-make-a-call-to-verify-post-in-database",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 635458100,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I try to access database for petclinicSecured and get all users",
+            "match": {
+              "location": "CreateAdminSteps.iTryToAccessDatabaseForPetclinicSecuredAndGetAllUsers()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepsDef.CreateAdminSteps.iCheckTheDatabaseIfTheAdminHasBeenAdded(CreateAdminSteps.java:117)\r\n\tat ✽.I check the database if the admin has been added(src/test/java/allScenario/adminSteps.feature:48)\r\n",
+              "duration": 7444500,
+              "status": "failed"
+            },
+            "line": 48,
+            "name": "I check the database if the admin has been added",
+            "match": {
+              "location": "CreateAdminSteps.iCheckTheDatabaseIfTheAdminHasBeenAdded()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "The user must exist in the database",
+            "match": {
+              "location": "CreateAdminSteps.theUserMustExistInTheDatabase()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "src/test/java/allScenario/adminSteps.feature",
+    "tags": []
+  }
+]

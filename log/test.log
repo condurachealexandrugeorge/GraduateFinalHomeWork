@@ -1,0 +1,58 @@
+Sep 20, 2019 6:16:31 PM stepsDef.CreateAdminSteps iHaveAccessToThePetclinicSecuredAsAnAdminWithCredentials
+INFO: I make a call to create OWNER_ADMIN
+Sep 20, 2019 6:16:31 PM stepsDef.CreateAdminSteps iHaveAccessToThePetclinicSecuredAsAnAdminWithCredentials
+INFO: I have access to the petclinicSecured as an admin
+Sep 20, 2019 6:16:32 PM stepsDef.CreateAdminSteps iMakeACallToForCreateOWNER_ADMINVET_ADMINWith
+INFO: I make a call to "/api/users" for create OWNER_ADMIN
+Sep 20, 2019 6:16:33 PM stepsDef.CreateAdminSteps iGetStatusCode
+INFO: I get status code 201
+Sep 20, 2019 6:16:33 PM stepsDef.CreateAdminSteps iHaveAccessToThePetclinicSecuredAsAnAdminWithCredentials
+INFO: I make a call to create OWNER_ADMIN
+Sep 20, 2019 6:16:33 PM stepsDef.CreateAdminSteps iHaveAccessToThePetclinicSecuredAsAnAdminWithCredentials
+INFO: I have access to the petclinicSecured as an admin
+Sep 20, 2019 6:16:33 PM stepsDef.CreateAdminSteps iMakeACallToForCreateOWNER_ADMINVET_ADMINWith
+INFO: I make a call to "/api/users" for create VET_ADMIN
+Sep 20, 2019 6:16:33 PM stepsDef.CreateAdminSteps iGetStatusCode
+INFO: I get status code 201
+Sep 20, 2019 6:16:33 PM stepsDef.CreateAdminSteps iTryToAccessPetclinicSecured
+INFO: I make a call to verify authentication as an admin
+Sep 20, 2019 6:16:33 PM stepsDef.CreateAdminSteps iEnterTheCredentialsForAuthentication
+INFO: I enter the credentials "admin","admin" for authentication
+Sep 20, 2019 6:16:33 PM stepsDef.CreateAdminSteps iGetStatusCode
+INFO: I get status code 200
+Sep 20, 2019 6:16:33 PM stepsDef.CreateAdminSteps iTryToAccessPetclinicSecuredAs
+INFO: I make a call to verify authentication as an OWNER_ADMIN
+Sep 20, 2019 6:16:34 PM stepsDef.CreateAdminSteps iAccessThePages
+INFO: I access the pages:/api/owners
+Sep 20, 2019 6:16:34 PM stepsDef.CreateAdminSteps iTryToAccessPetclinicSecuredAs
+INFO: I make a call to verify authentication as an OWNER_ADMIN
+Sep 20, 2019 6:16:34 PM stepsDef.CreateAdminSteps iAccessThePages
+INFO: I access the pages:/api/pets
+Sep 20, 2019 6:16:34 PM stepsDef.CreateAdminSteps iTryToAccessPetclinicSecuredAs
+INFO: I make a call to verify authentication as an OWNER_ADMIN
+Sep 20, 2019 6:16:34 PM stepsDef.CreateAdminSteps iAccessThePages
+INFO: I access the pages:/api/pettypes
+Sep 20, 2019 6:16:34 PM stepsDef.CreateAdminSteps iTryToAccessPetclinicSecuredAs
+INFO: I make a call to verify authentication as an OWNER_ADMIN
+Sep 20, 2019 6:16:35 PM stepsDef.CreateAdminSteps iAccessThePages
+INFO: I access the pages:/api/visits
+Sep 20, 2019 6:16:35 PM stepsDef.CreateAdminSteps iTryToAccessPetclinicSecuredAs
+INFO: I make a call to verify authentication as an VET_ADMIN
+Sep 20, 2019 6:16:35 PM stepsDef.CreateAdminSteps iAccessThePages
+INFO: I access the pages:/api/specialties
+Sep 20, 2019 6:16:35 PM stepsDef.CreateAdminSteps iTryToAccessPetclinicSecuredAs
+INFO: I make a call to verify authentication as an VET_ADMIN
+Sep 20, 2019 6:16:35 PM stepsDef.CreateAdminSteps iAccessThePages
+INFO: I access the pages:/api/pets
+Sep 20, 2019 6:16:35 PM stepsDef.CreateAdminSteps iTryToAccessPetclinicSecuredAs
+INFO: I make a call to verify authentication as an VET_ADMIN
+Sep 20, 2019 6:16:35 PM stepsDef.CreateAdminSteps iAccessThePages
+INFO: I access the pages:/api/pettypes
+Sep 20, 2019 6:16:35 PM stepsDef.CreateAdminSteps iTryToAccessPetclinicSecuredAs
+INFO: I make a call to verify authentication as an VET_ADMIN
+Sep 20, 2019 6:16:35 PM stepsDef.CreateAdminSteps iAccessThePages
+INFO: I access the pages:/api/vets
+Sep 20, 2019 6:16:35 PM stepsDef.CreateAdminSteps iTryToAccessDatabaseForPetclinicSecuredAndGetAllUsers
+INFO: I try to access database for petclinicSecured and get all users
+Sep 20, 2019 6:16:36 PM stepsDef.CreateAdminSteps iCheckTheDatabaseIfTheAdminHasBeenAdded
+INFO: I check the database if the admin has been added

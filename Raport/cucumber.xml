@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="11" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="12" time="4.796571">
+<testcase classname="" name="I make a call to create OWNER_ADMIN" time="2.016023">
+<failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;201&gt; doesn't match actual status code &lt;400&gt;.&#10;&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)&#13;&#10;&#9;at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)&#13;&#10;&#9;at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:470)&#13;&#10;&#9;at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)&#13;&#10;&#9;at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:632)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)&#13;&#10;&#9;at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:121)&#13;&#10;&#9;at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)&#13;&#10;&#9;at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:129)&#13;&#10;&#9;at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iGetStatusCode(CreateAdminSteps.java:73)&#13;&#10;&#9;at ✽.I get status code 201(src/test/java/allScenario/adminSteps.feature:8)&#13;&#10;"><![CDATA[Given I have access to the petclinicSecured as an admin with credentials "admin","admin".passed
+When I make a call to "/api/users" for create OWNER_ADMIN, VET_ADMIN with:  "OWNER_ADMIN".passed
+Then I get status code 201..................................................failed
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> doesn't match actual status code <400>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:470)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:632)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:121)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:129)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at stepsDef.CreateAdminSteps.iGetStatusCode(CreateAdminSteps.java:73)
+	at ✽.I get status code 201(src/test/java/allScenario/adminSteps.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="" name="I make a call to create OWNER_ADMIN 2" time="0.253138">
+<failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;201&gt; doesn't match actual status code &lt;400&gt;.&#10;&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)&#13;&#10;&#9;at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)&#13;&#10;&#9;at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:470)&#13;&#10;&#9;at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)&#13;&#10;&#9;at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:632)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Method.java:498)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)&#13;&#10;&#9;at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)&#13;&#10;&#9;at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:121)&#13;&#10;&#9;at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)&#13;&#10;&#9;at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:129)&#13;&#10;&#9;at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iGetStatusCode(CreateAdminSteps.java:73)&#13;&#10;&#9;at ✽.I get status code 201(src/test/java/allScenario/adminSteps.feature:8)&#13;&#10;"><![CDATA[Given I have access to the petclinicSecured as an admin with credentials "admin","admin".passed
+When I make a call to "/api/users" for create OWNER_ADMIN, VET_ADMIN with:  "VET_ADMIN".passed
+Then I get status code 201..................................................failed
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> doesn't match actual status code <400>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:470)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:632)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:121)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:129)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at stepsDef.CreateAdminSteps.iGetStatusCode(CreateAdminSteps.java:73)
+	at ✽.I get status code 201(src/test/java/allScenario/adminSteps.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="" name="I make a call to verify authentication as an admin" time="0.146782">
+<system-out><![CDATA[Given I try to access petclinicSecured......................................passed
+When I enter the credentials "admin","admin" for authentication.............passed
+Then I get status code 200..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="" name="I make a call to verify authentication as an owner_admin" time="0.513641">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)&#13;&#10;&#9;at ✽.I access the pages: &quot;/api/owners&quot;(src/test/java/allScenario/adminSteps.feature:23)&#13;&#10;"><![CDATA[Given I try to access petclinicSecured as "OWNER_ADMIN".....................passed
+When I access the pages: "/api/owners"......................................failed
+Then I get status code 200..................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)
+	at ✽.I access the pages: "/api/owners"(src/test/java/allScenario/adminSteps.feature:23)
+]]></failure>
+</testcase>
+<testcase classname="" name="I make a call to verify authentication as an owner_admin 2" time="0.208802">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)&#13;&#10;&#9;at ✽.I access the pages: &quot;/api/pets&quot;(src/test/java/allScenario/adminSteps.feature:23)&#13;&#10;"><![CDATA[Given I try to access petclinicSecured as "OWNER_ADMIN".....................passed
+When I access the pages: "/api/pets"........................................failed
+Then I get status code 200..................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)
+	at ✽.I access the pages: "/api/pets"(src/test/java/allScenario/adminSteps.feature:23)
+]]></failure>
+</testcase>
+<testcase classname="" name="I make a call to verify authentication as an owner_admin 3" time="0.178718">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)&#13;&#10;&#9;at ✽.I access the pages: &quot;/api/pettypes&quot;(src/test/java/allScenario/adminSteps.feature:23)&#13;&#10;"><![CDATA[Given I try to access petclinicSecured as "OWNER_ADMIN".....................passed
+When I access the pages: "/api/pettypes"....................................failed
+Then I get status code 200..................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)
+	at ✽.I access the pages: "/api/pettypes"(src/test/java/allScenario/adminSteps.feature:23)
+]]></failure>
+</testcase>
+<testcase classname="" name="I make a call to verify authentication as an owner_admin 4" time="0.154456">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)&#13;&#10;&#9;at ✽.I access the pages: &quot;/api/visits&quot;(src/test/java/allScenario/adminSteps.feature:23)&#13;&#10;"><![CDATA[Given I try to access petclinicSecured as "OWNER_ADMIN".....................passed
+When I access the pages: "/api/visits"......................................failed
+Then I get status code 200..................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)
+	at ✽.I access the pages: "/api/visits"(src/test/java/allScenario/adminSteps.feature:23)
+]]></failure>
+</testcase>
+<testcase classname="" name="I make a call to verify authentication as an vet_admin" time="0.154712">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)&#13;&#10;&#9;at ✽.I access the pages: &quot;/api/specialties&quot;(src/test/java/allScenario/adminSteps.feature:36)&#13;&#10;"><![CDATA[Given I try to access petclinicSecured as "VET_ADMIN".......................passed
+When I access the pages: "/api/specialties".................................failed
+Then I get status code 200..................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)
+	at ✽.I access the pages: "/api/specialties"(src/test/java/allScenario/adminSteps.feature:36)
+]]></failure>
+</testcase>
+<testcase classname="" name="I make a call to verify authentication as an vet_admin 2" time="0.16627">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)&#13;&#10;&#9;at ✽.I access the pages: &quot;/api/pets&quot;(src/test/java/allScenario/adminSteps.feature:36)&#13;&#10;"><![CDATA[Given I try to access petclinicSecured as "VET_ADMIN".......................passed
+When I access the pages: "/api/pets"........................................failed
+Then I get status code 200..................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)
+	at ✽.I access the pages: "/api/pets"(src/test/java/allScenario/adminSteps.feature:36)
+]]></failure>
+</testcase>
+<testcase classname="" name="I make a call to verify authentication as an vet_admin 3" time="0.176222">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)&#13;&#10;&#9;at ✽.I access the pages: &quot;/api/pettypes&quot;(src/test/java/allScenario/adminSteps.feature:36)&#13;&#10;"><![CDATA[Given I try to access petclinicSecured as "VET_ADMIN".......................passed
+When I access the pages: "/api/pettypes"....................................failed
+Then I get status code 200..................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)
+	at ✽.I access the pages: "/api/pettypes"(src/test/java/allScenario/adminSteps.feature:36)
+]]></failure>
+</testcase>
+<testcase classname="" name="I make a call to verify authentication as an vet_admin 4" time="0.17084">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)&#13;&#10;&#9;at ✽.I access the pages: &quot;/api/vets&quot;(src/test/java/allScenario/adminSteps.feature:36)&#13;&#10;"><![CDATA[Given I try to access petclinicSecured as "VET_ADMIN".......................passed
+When I access the pages: "/api/vets"........................................failed
+Then I get status code 200..................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepsDef.CreateAdminSteps.iAccessThePages(CreateAdminSteps.java:91)
+	at ✽.I access the pages: "/api/vets"(src/test/java/allScenario/adminSteps.feature:36)
+]]></failure>
+</testcase>
+<testcase classname="" name="I make a call to verify post in database" time="0.656967">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at stepsDef.CreateAdminSteps.iCheckTheDatabaseIfTheAdminHasBeenAdded(CreateAdminSteps.java:117)&#13;&#10;&#9;at ✽.I check the database if the admin has been added(src/test/java/allScenario/adminSteps.feature:48)&#13;&#10;"><![CDATA[Given I try to access database for petclinicSecured and get all users.......passed
+When I check the database if the admin has been added.......................failed
+Then The user must exist in the database....................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at stepsDef.CreateAdminSteps.iCheckTheDatabaseIfTheAdminHasBeenAdded(CreateAdminSteps.java:117)
+	at ✽.I check the database if the admin has been added(src/test/java/allScenario/adminSteps.feature:48)
+]]></failure>
+</testcase>
+</testsuite>
